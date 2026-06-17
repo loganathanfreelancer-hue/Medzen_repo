@@ -1,15 +1,17 @@
 package basepackage;
 
-import java.net.MalformedURLException;
 import java.net.URL;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
 import Utilities.common;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
+import pagespackage.Creationpage;
 import pagespackage.Loginpage;
 import testPackage.logintest;
 
@@ -19,8 +21,9 @@ public class BaseClass {
 	public common cm;
 	public Loginpage lp;
 	public logintest lt;
+	public Creationpage cp;
 	
-	@BeforeMethod
+	@BeforeClass
 	public void setup() throws Exception {
 
 	    DesiredCapabilities caps = new DesiredCapabilities();
@@ -29,6 +32,7 @@ public class BaseClass {
 	    caps.setCapability("appium:automationName", "UiAutomator2");
 	    caps.setCapability("appium:appPackage", "com.medzen.app");
 	    caps.setCapability("appium:appActivity", "com.medzen.app.MainActivity");
+	    caps.setCapability("appium:uiautomator2ServerLaunchTimeout", 60000);
 	    caps.setCapability("appium:autoGrantPermissions", true);
 
 
@@ -40,9 +44,10 @@ public class BaseClass {
 	    driver = new AndroidDriver(url, caps);
 	    cm = new common(driver);
 	    lp = new Loginpage(driver, cm);
+	    cp = new Creationpage(driver, cm);
 	}
 	
-	@AfterMethod
+	@AfterClass
 	public void teardown() {
 		
 		//driver.quit();
