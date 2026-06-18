@@ -13,6 +13,7 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import pagespackage.Creationpage;
 import pagespackage.Loginpage;
+import pagespackage.chatpage;
 import testPackage.logintest;
 
 public class BaseClass {
@@ -22,6 +23,7 @@ public class BaseClass {
 	public Loginpage lp;
 	public logintest lt;
 	public Creationpage cp;
+	public chatpage ch;
 	
 	@BeforeClass
 	public void setup() throws Exception {
@@ -45,6 +47,7 @@ public class BaseClass {
 	    cm = new common(driver);
 	    lp = new Loginpage(driver, cm);
 	    cp = new Creationpage(driver, cm);
+	    ch = new chatpage(driver,cm);
 	}
 	
 	@AfterClass

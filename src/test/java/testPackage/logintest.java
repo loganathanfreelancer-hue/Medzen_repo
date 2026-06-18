@@ -23,13 +23,32 @@ public class logintest extends BaseClass{
 		cp.pnames();
 		cp.pdescs();
 		cp.clickNextOnPage1();
-		Thread.sleep(5000);
 		cp.clickNextOnPage2();
-		Thread.sleep(5000);
+		cp.clickempOnPage2();
 		cp.clickNextOnPage3();
-		Thread.sleep(5000);
+        Thread.sleep(3000);
 		cp.clickNextOnPage4();
-
+		cp.clickNextOnPage5();
+		ch.chats();
+		ch.msg();
+		ch.send();
+		ch.back();
+		ch.menu();
+		ch.signouts();
+		
+	}
+	
+	@Test(dependsOnMethods = "creation", priority = 0)
+	public void againlogin() {
+		
+		ch.againsignUp();
+		ch.againemailPages();
+		ch.againpassbutton();
+		ch.againpassword();
+		ch.againloginbtn();
+		ch.againchats();
+		ch.againmsg();
+		ch.againsend();
 		
 	}
 

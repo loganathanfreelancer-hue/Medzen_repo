@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,6 +101,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testPackage.logintest" class="method navigator-link" hash-for-method="againlogin">againlogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testPackage.logintest" class="method navigator-link" hash-for-method="creation">creation</a> <!-- method navigator-link -->
@@ -129,6 +134,13 @@
               <span class="class-name">testPackage.logintest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="againlogin">
+                  </a> <!-- againlogin -->
+                  <span class="method-name">againlogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="creation">
@@ -197,15 +209,19 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'creation')
 data.setCell(0, 2, 'testPackage.logintest')
-data.setCell(0, 3, 38148);
+data.setCell(0, 3, 46015);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'login')
+data.setCell(1, 1, 'againlogin')
 data.setCell(1, 2, 'testPackage.logintest')
-data.setCell(1, 3, 24592);
+data.setCell(1, 3, 21269);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'login')
+data.setCell(2, 2, 'testPackage.logintest')
+data.setCell(2, 3, 12728);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -243,15 +259,19 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">36399 ms</span>
+                <span class="method-start">15478 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">creation</span>
-                <span class="method-start">60999 ms</span>
+                <span class="method-start">28220 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">againlogin</span>
+                <span class="method-start">74239 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">99150 ms</span>
+                <span class="method-start">95511 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
