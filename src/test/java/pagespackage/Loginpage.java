@@ -24,7 +24,7 @@ public class Loginpage {
 	By eye = By.xpath("//android.widget.EditText/following-sibling::android.widget.Button");
 	By login = By.xpath("//android.widget.Button[@text='Login']");
 
-	public void signUp() {
+	public void signUp() throws InterruptedException {
 
 		cm.signuppage(user);
 

@@ -16,10 +16,11 @@ public class common {
 		this.driver = (AndroidDriver) driver;
 	}
 
-	public void signuppage(By loc) {
+	public void signuppage(By loc) throws InterruptedException {
 
 		long start = System.currentTimeMillis();
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+		Thread.sleep(5000);
 		WebElement loginpage = wait.until(ExpectedConditions.elementToBeClickable(loc));
 		loginpage.click();
 		long end = System.currentTimeMillis();
@@ -256,10 +257,11 @@ public class common {
 	
 	//Again login
 	
-	public void Againsignuppage(By loc) {
+	public void Againsignuppage(By loc) throws InterruptedException {
 
 		long start = System.currentTimeMillis();
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+		Thread.sleep(5000);
 		WebElement loginpage = wait.until(ExpectedConditions.elementToBeClickable(loc));
 		loginpage.click();
 		long end = System.currentTimeMillis();

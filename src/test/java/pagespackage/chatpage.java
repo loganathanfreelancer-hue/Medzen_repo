@@ -19,8 +19,8 @@ public class chatpage {
 	By pname = By.xpath("//android.widget.TextView[contains(@text,'Test Project')]");
 	By chatmsg = By.xpath("//android.widget.EditText[contains(@hint,'Type a message')]");
 	By send = By.xpath("//android.widget.Button[@text='Send message']");
-	By back1 = By.xpath("//android.widget.Button[@bounds='[42,147][141,249]']");
-	By menu = By.xpath("//android.widget.Button[@bounds='[49,115][168,236]']");
+	By back1 = By.xpath("(//android.widget.Button)[1]");
+	By menu = By.xpath("(//android.widget.Button)[1]");
 	By signout = By.xpath("//android.widget.Button[@text='Sign out']");
 
 	//Again login
@@ -73,7 +73,7 @@ public class chatpage {
 
 	}
 
-	public void againsignUp() {
+	public void againsignUp() throws InterruptedException {
 
 		cm.Againsignuppage(user);
 

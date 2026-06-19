@@ -19,7 +19,7 @@ public class Creationpage {
 		this.cm = cm;
 	}
 
-	By plus = By.xpath("//android.widget.Button[@bounds='[868,2189][1018,2338]']");
+	By plus = By.xpath("(//android.widget.Button)[last()]");
 	By pname = By.xpath("//android.widget.EditText[@hint='Eg. Project A']");
 	By pdesc = By.xpath("//android.widget.EditText[@hint='Eg. This project A includes everything...']");
 	//By pfile = By.xpath("//android.widget.EditText[@text='Drag and drop or add files']");

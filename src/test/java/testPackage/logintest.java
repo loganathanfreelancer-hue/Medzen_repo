@@ -9,6 +9,7 @@ public class logintest extends BaseClass{
 	@Test(priority = -2)
 	public void login() throws InterruptedException {
 		
+		Thread.sleep(3000);
 		lp.signUp();
 		lp.emailPages();
 		lp.passbutton();
@@ -39,8 +40,9 @@ public class logintest extends BaseClass{
 	}
 	
 	@Test(dependsOnMethods = "creation", priority = 0)
-	public void againlogin() {
+	public void againlogin() throws InterruptedException {
 		
+		Thread.sleep(3000);
 		ch.againsignUp();
 		ch.againemailPages();
 		ch.againpassbutton();
