@@ -203,6 +203,45 @@ public class common {
 
 	}
 	
+	public void changetoClient(By loc) {
+		long start = System.currentTimeMillis();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        WebElement sendmsg = wait.until(ExpectedConditions.elementToBeClickable(loc));
+        System.out.println("Client found");
+        sendmsg.click();
+        System.out.println("Inside client chat");
+		long end = System.currentTimeMillis();
+		System.out.println("Inside client chat: " + (end - start) + " ms");
+
+	}
+	
+	
+	public void clientmsgchats(By loc, String chatmsg) {
+
+		long start = System.currentTimeMillis();
+		//System.out.println(driver.getPageSource());
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement msgs = wait.until(ExpectedConditions.visibilityOfElementLocated(loc));
+		msgs.sendKeys(chatmsg);
+		long end = System.currentTimeMillis();
+		System.out.println("Msg entered: " + (end - start) + " ms");
+
+	}
+
+	public void clientsend(By loc) {
+		long start = System.currentTimeMillis();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        WebElement sendmsg = wait.until(ExpectedConditions.elementToBeClickable(loc));
+        System.out.println("Creation found");
+        sendmsg.click();
+        System.out.println("Inside chat box");
+		long end = System.currentTimeMillis();
+		System.out.println("Message send to employee: " + (end - start) + " ms");
+
+	}
+
+	
+	
 	public void backbutton(By loc) throws InterruptedException {
 
 		long start = System.currentTimeMillis();
@@ -255,7 +294,7 @@ public class common {
 
 	}
 	
-	//Again login
+	//Again login for employee
 	
 	public void Againsignuppage(By loc) throws InterruptedException {
 
@@ -374,6 +413,59 @@ public class common {
 		System.out.println("Message send to employee: " + (end - start) + " ms");
 
 	}
+	
+	public void empbackbutton(By loc) throws InterruptedException {
+
+		long start = System.currentTimeMillis();
+
+		System.out.println("Pressing back button");
+		Thread.sleep(5000);
+
+		WebDriverWait wait =
+				new WebDriverWait(driver, Duration.ofSeconds(30));
+
+		WebElement plusbtn =
+				wait.until(ExpectedConditions.elementToBeClickable(loc));
+
+		plusbtn.click();
+
+		long end = System.currentTimeMillis();
+
+		System.out.println("Clicked back icon: " + (end - start) + " ms");
+	}
+
+	public void empmenubutton(By loc) throws InterruptedException {
+
+		long start = System.currentTimeMillis();
+
+		System.out.println("Opened menu page");
+		Thread.sleep(5000);
+
+		WebDriverWait wait =
+				new WebDriverWait(driver, Duration.ofSeconds(30));
+
+		WebElement plusbtn =
+				wait.until(ExpectedConditions.elementToBeClickable(loc));
+
+		plusbtn.click();
+
+		long end = System.currentTimeMillis();
+
+		System.out.println("Clicked menu icon: " + (end - start) + " ms");
+	}
+	
+	public void empsignouts(By loc) {
+		long start = System.currentTimeMillis();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        WebElement sendmsg = wait.until(ExpectedConditions.elementToBeClickable(loc));
+        System.out.println("Signout button found");
+        sendmsg.click();
+        System.out.println("Signout button clicked");
+		long end = System.currentTimeMillis();
+		System.out.println("Sign out successfully: " + (end - start) + " ms");
+
+	}
+
 
 
 

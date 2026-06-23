@@ -13,6 +13,7 @@ import Utilities.common;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import pagespackage.Creationpage;
+import pagespackage.Freepage;
 import pagespackage.Loginpage;
 import pagespackage.chatpage;
 import testPackage.logintest;
@@ -28,6 +29,7 @@ public class BaseClass {
 	public logintest lt;
 	public Creationpage cp;
 	public chatpage ch;
+	public Freepage fp;
 	
 	@BeforeClass
 	@Parameters("device")
@@ -74,6 +76,7 @@ public class BaseClass {
 	    lp = new Loginpage(getDriver(), cm);
 	    cp = new Creationpage(getDriver(), cm);
 	    ch = new chatpage(getDriver(),cm);
+	    fp = new Freepage(getDriver(), cm);
 	}
 	
 	@AfterClass

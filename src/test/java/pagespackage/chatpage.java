@@ -19,11 +19,14 @@ public class chatpage {
 	By pname = By.xpath("//android.widget.TextView[contains(@text,'Test Project')]");
 	By chatmsg = By.xpath("//android.widget.EditText[contains(@hint,'Type a message')]");
 	By send = By.xpath("//android.widget.Button[@text='Send message']");
+	By clienttab = By.xpath("//android.widget.Button[@text='Client']");
+	By clientchatmsg = By.xpath("//android.widget.EditText[contains(@hint,'Type a message')]");
+	By clientsend = By.xpath("//android.widget.Button[@text='Send message']");
 	By back1 = By.xpath("(//android.widget.Button)[1]");
 	By menu = By.xpath("(//android.widget.Button)[1]");
 	By signout = By.xpath("//android.widget.Button[@text='Sign out']");
 
-	//Again login
+	//Again login to emp
 	By user = By.xpath("//*[@text='Already have an account? Log in']");
 	By emailid = By.className("android.widget.EditText");
 	By pwdbut = By.xpath("//*[@text='Enter password']");
@@ -35,6 +38,10 @@ public class chatpage {
 	By pname1 = By.xpath("//android.widget.TextView[contains(@text,'Test Project')]");
 	By chatmsg1 = By.xpath("//android.widget.EditText[contains(@hint,'Type a message')]");
 	By send1 = By.xpath("//android.widget.Button[@text='Send message']");
+	
+	By backemp = By.xpath("(//android.widget.Button)[1]");
+	By menuemp = By.xpath("(//android.widget.Button)[1]");
+	By signoutemp = By.xpath("//android.widget.Button[@text='Sign out']");
 
 
 	public void chats() {
@@ -45,7 +52,7 @@ public class chatpage {
 
 	public void msg() {
 
-		cm.msgchats(chatmsg, "Hi Sakthi! From admin here");
+		cm.msgchats(chatmsg, "Hi From admin here");
 
 	}
 
@@ -54,7 +61,26 @@ public class chatpage {
 		cm.send(send);
 
 	}
-
+	
+	public void movetoclient() {
+		
+		cm.changetoClient(clienttab);
+		
+	}
+	
+	public void clientmsg()
+	{
+		
+		cm.clientmsgchats(clientchatmsg, "Hi Client from admin here");
+		
+	}
+	
+	public void clientmsgsend() {
+		
+		cm.clientsend(clientsend);
+		
+	}
+	
 	public void back() throws InterruptedException {
 
 		cm.backbutton(back1);
@@ -109,7 +135,7 @@ public class chatpage {
 
 	public void againmsg() {
 
-		cm.msgchats(chatmsg1, "Hi Admin! Sakthi here");
+		cm.msgchats(chatmsg1, "Hi Emp here");
 
 	}
 
@@ -118,4 +144,23 @@ public class chatpage {
 		cm.send(send1);
 
 	}
+	
+	public void empback() throws InterruptedException {
+
+		cm.empbackbutton(backemp);
+
+	}
+
+	public void empmenu() throws InterruptedException {
+
+		cm.empmenubutton(menuemp);
+
+	}
+
+	public void empsignouts() {
+
+		cm.empsignouts(signoutemp);
+
+	}
+
 }
