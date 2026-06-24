@@ -16,6 +16,7 @@ import pagespackage.Creationpage;
 import pagespackage.Freepage;
 import pagespackage.Loginpage;
 import pagespackage.chatpage;
+import pagespackage.clientpage;
 import testPackage.logintest;
 
 public class BaseClass {
@@ -30,6 +31,7 @@ public class BaseClass {
 	public Creationpage cp;
 	public chatpage ch;
 	public Freepage fp;
+	public clientpage cl;
 	
 	@BeforeClass
 	@Parameters("device")
@@ -77,6 +79,7 @@ public class BaseClass {
 	    cp = new Creationpage(getDriver(), cm);
 	    ch = new chatpage(getDriver(),cm);
 	    fp = new Freepage(getDriver(), cm);
+	    cl = new clientpage(getDriver(), cm);
 	}
 	
 	@AfterClass

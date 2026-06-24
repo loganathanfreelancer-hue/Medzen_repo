@@ -79,5 +79,30 @@ public class logintest extends BaseClass{
 		fp.freesignouts();
 		
 	}
+	
+	@Test(dependsOnMethods = "againfreelogin", priority = 2)
+	public void againclilogin() throws InterruptedException {
+		
+		cl.cliagainsignUp();
+		cl.cliagainemailPages();
+		cl.cliagainpassbutton();
+		cl.cliagainpassword();
+		cl.cliagainloginbtn();
+		cl.clichats();
+		cl.movetoclient();
+		cl.clientmsg();
+		cl.clientmsgsend();
+		fp.freeback();
+		fp.freemenu();
+		fp.freesignouts();
+		lp.signUp();
+		lp.emailPages();
+		lp.passbutton();
+		lp.password();
+		lp.loginbtn();
+		Thread.sleep(3000);
+		ch.chats();
+		
+	}
 
 }

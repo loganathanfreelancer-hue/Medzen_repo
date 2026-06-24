@@ -52,7 +52,7 @@ public class chatpage {
 
 	public void msg() {
 
-		cm.msgchats(chatmsg, "Hi From admin here");
+		cm.msgchats(chatmsg, "Hi From admin here in internal tab");
 
 	}
 
@@ -71,7 +71,7 @@ public class chatpage {
 	public void clientmsg()
 	{
 		
-		cm.clientmsgchats(clientchatmsg, "Hi Client from admin here");
+		cm.clientmsgchats(clientchatmsg, "Hi Client from admin here in client tab");
 		
 	}
 	
@@ -135,7 +135,7 @@ public class chatpage {
 
 	public void againmsg() {
 
-		cm.msgchats(chatmsg1, "Hi Emp here");
+		cm.msgchats(chatmsg1, "Hi Employee here from internal tab");
 
 	}
 

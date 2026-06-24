@@ -68,7 +68,7 @@ public class Freepage {
 
 		public void freemsg() {
 
-			cm.msgchats(freechatmsg, "Hi From Freelancer here");
+			cm.msgchats(freechatmsg, "Hi From Freelancer here from internal tab");
 
 		}
 
