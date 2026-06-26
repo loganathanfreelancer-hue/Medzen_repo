@@ -29,48 +29,58 @@ public class clientpage {
 	By clienttab = By.xpath("//android.widget.Button[@text='Client']");
 	By clientchatmsg = By.xpath("//android.widget.EditText[contains(@hint,'Type a message')]");
 	By clientsend = By.xpath("//android.widget.Button[@text='Send message']");
+	By dotsthree = By.xpath("//android.widget.TextView[@text='Test']/parent::*/android.widget.Button");
+	By delete = By.xpath("//android.widget.Button[@text='Delete']");
+	By confirm = By.xpath("//android.widget.Button[@text='Yes']");
 	
+	//Signup for client login
 	public void cliagainsignUp() throws InterruptedException {
 
 		cm.Againsignuppage(cliuser);
 
 	}
 
+	//Entered client email for client login
 	public void cliagainemailPages() {
 
 		cm.Againemailpage(cliemailid, "sivasakthi26082000@gmail.com");
 
 	}
 
+	//Clicked passbutton for client login
 	public void cliagainpassbutton() {
 
 		cm.Againpasswordbuttonclick(clipwdbut);
 	}
 
+	//Entered password for client login
 	public void cliagainpassword() {
 
 		cm.Againpassword(clipwd, clieye, "111111");
 
 	}
 
+	//Clicked login button and logged into client login
 	public void cliagainloginbtn() {
 
 		cm.Againloginbutton(clilogin);
 	}
 
-	
+	//Entered into chat which created from admin
 	public void clichats() {
 
 		cm.chat(cliepname);
 
 	}
 	
+	//Move to client tab from internal tab
    public void movetoclient() {
 		
 		cm.changetoClient(clienttab);
 		
 	}
 	
+   //Enter msg in client chat from client tab
 	public void clientmsg()
 	{
 		
@@ -78,9 +88,31 @@ public class clientpage {
 		
 	}
 	
+	//Send message from client in client tab
 	public void clientmsgsend() {
 		
 		cm.clientsend(clientsend);
+		
+	}
+	
+	//Clicking three dots
+	public void dots() {
+		
+		cm.clickTestAction(dotsthree);
+		
+	}
+	
+	//Clicks delete button and deleted the ticket
+	public void deletee() {
+		
+		cm.delete(delete);
+		
+	}
+	
+	//Clicks yes for alert
+	public void confirmm() {
+		
+		cm.alert(confirm);
 		
 	}
 	

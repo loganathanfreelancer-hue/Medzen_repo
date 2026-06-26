@@ -10,6 +10,7 @@
           <include name="againfreelogin"/>
           <include name="againlogin"/>
           <include name="login"/>
+          <include name="againclilogin"/>
           <include name="teardown"/>
           <include name="creation"/>
         </methods>

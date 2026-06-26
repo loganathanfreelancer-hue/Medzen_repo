@@ -44,30 +44,35 @@ public class chatpage {
 	By signoutemp = By.xpath("//android.widget.Button[@text='Sign out']");
 
 
+	// Going to chat which created
 	public void chats() {
 
 		cm.chat(pname);
 
 	}
 
+	// Sending text in  from admin in internal tab
 	public void msg() {
 
 		cm.msgchats(chatmsg, "Hi From admin here in internal tab");
 
 	}
 
+	// Click send from admin in internal tab
 	public void send() {
 
 		cm.send(send);
 
 	}
 	
+	//In chat switch to client tab
 	public void movetoclient() {
 		
 		cm.changetoClient(clienttab);
 		
 	}
 	
+	// In client tab sending msg to client from admin
 	public void clientmsg()
 	{
 		
@@ -75,88 +80,103 @@ public class chatpage {
 		
 	}
 	
+	// In client tab sent msg from admin login
 	public void clientmsgsend() {
 		
 		cm.clientsend(clientsend);
 		
 	}
 	
+	//Going back to menu page in admin
 	public void back() throws InterruptedException {
 
 		cm.backbutton(back1);
 
 	}
 
+	//Clicks menu in admin
 	public void menu() throws InterruptedException {
 
 		cm.menubutton(menu);
 
 	}
 
+	//Clicks signout in admin and logout from admin
 	public void signouts() {
 
 		cm.signouts(signout);
 
 	}
 
+	//Again clicks signup from employee
 	public void againsignUp() throws InterruptedException {
 
 		cm.Againsignuppage(user);
 
 	}
 
+	//Enter employee emailid
 	public void againemailPages() {
 
 		cm.Againemailpage(emailid, "sakthisudalai23062002@gmail.com");
 
 	}
 
+	//Click employee password button
 	public void againpassbutton() {
 
 		cm.Againpasswordbuttonclick(pwdbut);
 	}
 
+	//Enter employee password button
 	public void againpassword() {
 
 		cm.Againpassword(pwd, eye, "111111");
 
 	}
 
+	//Logged into employee 
 	public void againloginbtn() {
 
 		cm.Againloginbutton(login);
 	}
 
+	//Entered into chats which created in admin login from employee
 	public void againchats() {
 
 		cm.chat(pname1);
 
 	}
 
+	//Send msg from employee in internal tab
 	public void againmsg() {
 
 		cm.msgchats(chatmsg1, "Hi Employee here from internal tab");
 
 	}
 
+	//Clicks send in internal tab from employee login
 	public void againsend() {
 
 		cm.send(send1);
 
 	}
 	
+	//Clicks back from chat in employee login
 	public void empback() throws InterruptedException {
 
 		cm.empbackbutton(backemp);
 
 	}
 
+	//Clicks menu from employee login
 	public void empmenu() throws InterruptedException {
 
 		cm.empmenubutton(menuemp);
 
 	}
 
+	//Clicks signout from employee login and loggedout from employee login
 	public void empsignouts() {
 
 		cm.empsignouts(signoutemp);

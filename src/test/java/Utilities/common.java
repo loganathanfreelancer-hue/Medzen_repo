@@ -465,7 +465,37 @@ public class common {
 		System.out.println("Sign out successfully: " + (end - start) + " ms");
 
 	}
+	
+	public void clickTestAction(By loc) {
 
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+
+	    WebElement threedots = wait.until(
+	            ExpectedConditions.elementToBeClickable(loc));
+
+	    threedots.click();
+	}
+
+
+	public void delete(By loc) {
+
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+
+	    WebElement del = wait.until(
+	            ExpectedConditions.elementToBeClickable(loc));
+
+	    del.click();
+	}
+	
+	public void alert(By loc) {
+
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+
+	    WebElement alt = wait.until(
+	            ExpectedConditions.elementToBeClickable(loc));
+
+	    alt.click();
+	}
 
 
 

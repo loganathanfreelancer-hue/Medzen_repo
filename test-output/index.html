@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-ParallelSuite" class="navigator-link">
-              <span class="suite-name border-skipped">ParallelSuite</span>
+              <span class="suite-name border-passed">ParallelSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -55,7 +55,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-ParallelSuite" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,36 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,  4 skipped,  4 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-ParallelSuite" class="hide-methods skipped suite-ParallelSuite"> (hide)</a> <!-- hide-methods skipped suite-ParallelSuite -->
-                      <a href="#" panel-name="suite-ParallelSuite" class="show-methods skipped suite-ParallelSuite"> (show)</a> <!-- show-methods skipped suite-ParallelSuite -->
-                    </span>
-                    <div class="method-list-content skipped suite-ParallelSuite">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-ParallelSuite" title="testPackage.logintest" class="method navigator-link" hash-for-method="againfreelogin">againfreelogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-ParallelSuite" title="testPackage.logintest" class="method navigator-link" hash-for-method="againlogin">againlogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-ParallelSuite" title="testPackage.logintest" class="method navigator-link" hash-for-method="creation">creation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-ParallelSuite" title="testPackage.logintest" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-ParallelSuite -->
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -130,6 +101,11 @@
                       <a href="#" panel-name="suite-ParallelSuite" class="show-methods passed suite-ParallelSuite"> (show)</a> <!-- show-methods passed suite-ParallelSuite -->
                     </span>
                     <div class="method-list-content passed suite-ParallelSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelSuite" title="testPackage.logintest" class="method navigator-link" hash-for-method="againclilogin">againclilogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-ParallelSuite" title="testPackage.logintest" class="method navigator-link" hash-for-method="againfreelogin">againfreelogin</a> <!-- method navigator-link -->
@@ -162,127 +138,19 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-ParallelSuite" class="panel ParallelSuite">
-          <div class="suite-ParallelSuite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">testPackage.logintest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="againfreelogin">
-                  </a> <!-- againfreelogin -->
-                  <span class="method-name">againfreelogin</span>
-                  <div class="stack-trace">java.lang.Throwable: Method testPackage.logintest.againfreelogin() on instance testPackage.logintest@60015ef5 depends on not successfully finished methods 
-[testPackage.logintest.againlogin() on instance testPackage.logintest@60015ef5]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 8 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="againlogin">
-                  </a> <!-- againlogin -->
-                  <span class="method-name">againlogin</span>
-                  <div class="stack-trace">java.lang.Throwable: Method testPackage.logintest.againlogin() on instance testPackage.logintest@60015ef5 depends on not successfully finished methods 
-[testPackage.logintest.creation() on instance testPackage.logintest@60015ef5]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 8 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="creation">
-                  </a> <!-- creation -->
-                  <span class="method-name">creation</span>
-                  <div class="stack-trace">java.lang.Throwable: Method testPackage.logintest.creation() on instance testPackage.logintest@60015ef5 depends on not successfully finished methods 
-[testPackage.logintest.login() on instance testPackage.logintest@60015ef5]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 8 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="login">
-                  </a> <!-- login -->
-                  <span class="method-name">login</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: &apos;DESKTOP-4ORC1A7&apos;, ip: &apos;192.168.56.1&apos;
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[Capabilities {appium:appActivity: com.medzen.app.MainActivity, appium:appPackage: com.medzen.app, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: Redmi note 12 pro, appium:enforceXPath1: true, appium:ignoreHiddenApiPolicyError: true, appium:systemPort: 8202, appium:udid: v4kbnzf6w8hynfaa, appium:uiautomator2ServerLaunchTimeout: 60000, platformName: ANDROID}]}]
-Capabilities {appium:appActivity: com.medzen.app.MainActivity, appium:appPackage: com.medzen.app, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: Redmi note 12 pro, appium:enforceXPath1: true, appium:ignoreHiddenApiPolicyError: true, appium:systemPort: 8202, appium:udid: v4kbnzf6w8hynfaa, appium:uiautomator2ServerLaunchTimeout: 60000, platformName: ANDROID}
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:270)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:91)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:103)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
-	at basepackage.BaseClass.setup(BaseClass.java:66)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: java.io.UncheckedIOException: java.net.ConnectException
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:439)
-	at io.appium.java_client.internal.filters.AppiumIdempotencyFilter.lambda$apply$0(AppiumIdempotencyFilter.java:35)
-	at io.appium.java_client.internal.filters.AppiumUserAgentFilter.lambda$apply$0(AppiumUserAgentFilter.java:87)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:355)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:89)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	... 26 more
-Caused by: java.net.ConnectException
-	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1055)
-	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:198)
-	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:230)
-	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:206)
-	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
-	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
-	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
-	... 3 more
-Caused by: java.nio.channels.ClosedChannelException
-	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:195)
-	at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:760)
-	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:848)
-	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$0(PlainHttpConnection.java:183)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
-	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:185)
-	... 9 more
-... Removed 15 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-ParallelSuite-class-skipped -->
           <div class="suite-ParallelSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">testPackage.logintest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="againclilogin">
+                  </a> <!-- againclilogin -->
+                  <span class="method-name">againclilogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="againfreelogin">
@@ -323,12 +191,6 @@ Caused by: java.nio.channels.ClosedChannelException
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;ParallelSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;EmulatorTest&quot;&gt;
-    &lt;parameter name=&quot;device&quot; value=&quot;emulator&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;testPackage.logintest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- EmulatorTest --&gt;
   &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;RealMobileTest&quot;&gt;
     &lt;parameter name=&quot;device&quot; value=&quot;mobile&quot;/&gt;
     &lt;classes&gt;
@@ -345,9 +207,6 @@ Caused by: java.nio.channels.ClosedChannelException
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
-              <li>
-                <span class="test-name">EmulatorTest (1 class)</span>
-              </li>
               <li>
                 <span class="test-name">RealMobileTest (1 class)</span>
               </li>
@@ -375,39 +234,27 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'creation')
 data.setCell(0, 2, 'testPackage.logintest')
-data.setCell(0, 3, 114951);
+data.setCell(0, 3, 97390);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'againlogin')
+data.setCell(1, 1, 'againclilogin')
 data.setCell(1, 2, 'testPackage.logintest')
-data.setCell(1, 3, 41985);
+data.setCell(1, 3, 41536);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'login')
+data.setCell(2, 1, 'againlogin')
 data.setCell(2, 2, 'testPackage.logintest')
-data.setCell(2, 3, 16090);
+data.setCell(2, 3, 32514);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'againfreelogin')
 data.setCell(3, 2, 'testPackage.logintest')
-data.setCell(3, 3, 15956);
+data.setCell(3, 3, 25896);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'creation')
+data.setCell(4, 1, 'login')
 data.setCell(4, 2, 'testPackage.logintest')
-data.setCell(4, 3, 0);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'login')
-data.setCell(5, 2, 'testPackage.logintest')
-data.setCell(5, 3, 0);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'againfreelogin')
-data.setCell(6, 2, 'testPackage.logintest')
-data.setCell(6, 3, 0);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'againlogin')
-data.setCell(7, 2, 'testPackage.logintest')
-data.setCell(7, 3, 0);
+data.setCell(4, 3, 14176);
 window.suiteTableData['ParallelSuite']= { tableData: data, tableDiv: 'times-div-ParallelSuite'}
 return data;
 }
@@ -440,34 +287,32 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testPackage.logintest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setup(mobile)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="configuration-class before">
-                <span class="method-name">setup(emulator)</span>
-                <span class="method-start">1 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">19903 ms</span>
+                <span class="method-start">8474 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">creation</span>
-                <span class="method-start">36001 ms</span>
+                <span class="method-start">22671 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">againlogin</span>
-                <span class="method-start">150955 ms</span>
+                <span class="method-start">120064 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">againfreelogin</span>
-                <span class="method-start">192943 ms</span>
+                <span class="method-start">152583 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">againclilogin</span>
+                <span class="method-start">178484 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">208903 ms</span>
+                <span class="method-start">220022 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

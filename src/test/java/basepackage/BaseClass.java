@@ -65,6 +65,7 @@ public class BaseClass {
             caps.setCapability("appium:systemPort", 8202);
             caps.setCapability("appium:ignoreHiddenApiPolicyError", true);
             caps.setCapability("appium:enforceXPath1", true);
+            caps.setCapability("appium:uiautomator2ServerInstallTimeout", 120000);
             driver.set(new AndroidDriver(new URL("http://127.0.0.1:4725"), caps));
         }   
 

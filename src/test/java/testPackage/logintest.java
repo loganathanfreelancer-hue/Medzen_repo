@@ -102,6 +102,17 @@ public class logintest extends BaseClass{
 		lp.loginbtn();
 		Thread.sleep(3000);
 		ch.chats();
+		cl.movetoclient();
+		
+	}
+	
+	@Test(dependsOnMethods = "againclilogin", priority = 3)
+	public void delete() throws InterruptedException {
+		
+		fp.freeback();
+		cl.dots();
+		cl.deletee();
+		cl.confirmm();
 		
 	}
 

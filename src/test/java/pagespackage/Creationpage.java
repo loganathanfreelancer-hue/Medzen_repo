@@ -92,7 +92,7 @@ public class Creationpage {
 	                        "width", 800,
 	                        "height", 1000,
 	                        "direction", "down",
-	                        "percent", 0.20
+	                        "percent", 0.2
 	                ));
 
 	                Thread.sleep(500);
@@ -111,7 +111,7 @@ public class Creationpage {
 	                "percent", 0.15
 	        ));
 
-	        Thread.sleep(1000);
+	        Thread.sleep(500);
 	    }
 
 	    //wait.until(ExpectedConditions.elementToBeClickable(addcli));
