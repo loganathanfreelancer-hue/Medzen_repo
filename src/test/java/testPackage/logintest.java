@@ -112,6 +112,7 @@ public class logintest extends BaseClass{
 		fp.freeback();
 		cl.dots();
 		cl.deletee();
+		System.out.println("The records will be in the deleted tickets for 90 days.");
 		cl.confirmm();
 		
 	}

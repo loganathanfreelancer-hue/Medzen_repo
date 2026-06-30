@@ -4,13 +4,14 @@ import java.net.URL;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
 import Utilities.common;
-import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import pagespackage.Creationpage;
 import pagespackage.Freepage;
@@ -32,10 +33,19 @@ public class BaseClass {
 	public chatpage ch;
 	public Freepage fp;
 	public clientpage cl;
+	public static ExtentReports extent;
+    public static ExtentTest test;
 	
 	@BeforeClass
 	@Parameters("device")
 	public void setup(String device) throws Exception {
+		
+		// Extent Report
+        ExtentSparkReporter spark = new ExtentSparkReporter("reports/extent.html");
+        spark.config().setReportName("Automation Report");
+        spark.config().setDocumentTitle("Test Results");
+        extent = new ExtentReports();
+        extent.attachReporter(spark);
 
 	    DesiredCapabilities caps = new DesiredCapabilities();
 
@@ -86,7 +96,10 @@ public class BaseClass {
 	@AfterClass
 	public void teardown() {
 		
-		//driver.quit();
+		if(getDriver() != null) {
+            //getDriver().quit();
+        }
+        extent.flush();
 		
 	}
 	
